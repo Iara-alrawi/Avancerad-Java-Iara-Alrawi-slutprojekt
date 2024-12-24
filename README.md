@@ -26,8 +26,8 @@ Detta projektet är ett To-Do List Management System som kombinerar en Swing-bas
     ### Förkrav
     - Java JDK 17 eller senare.
    
-      ## Instruktioner
-      1. Klona projekt
+      ## Starta applikationen:
+      1. Klona projekt från GitHub
         ```bash
         git clone https://github.com/iara Alrawi/Avancerad-Java-Iara-Alrawi-slutprojekt
         cd Avancerad-Java-Iara-Alrawi-sluprojekt  
