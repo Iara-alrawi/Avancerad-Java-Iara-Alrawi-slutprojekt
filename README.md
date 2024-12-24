@@ -1,30 +1,36 @@
+
 # To-Do List Management System
 
-## Projektbeskrivning
-Detta projektet är ett To-Do List Management System som kombinerar en Swing-baserad grafisk användargränssnitt (GUI) med en HTTP-baserad backend för att hantera uppgifter. Projektet är utvecklat i Java och innehåller grundläggande funktioner som att skapa, uppdatera, visa och ta bort uppgifter.
+## Projektmål och Funktionalitet
 
-## Funktioner
-- **GUI (Swing)**:
-- Lägg till, uppdatera och visa uppgifter i en lista.
-- Ta bort alla uppgifter med ett knapptryck.
-- Intuitivt användargränssnitt för enkel användning.
+Detta projekt är ett To-Do List Management System som gör det möjligt för användare att hantera uppgifter genom både ett grafiskt användargränssnitt (GUI) och ett API. Systemet består av två delar:
 
-- **HTTP-server**:
-- API-endpoints för att hantera uppgifter via HTTP-metoder (GET, POST, PUT, DELETE).
-- Kör en HTTP-server lokalt på port 8000.
+1. **Backend (Server)**:
+   - Hanterar uppgifter via ett API (GET, POST, PUT, DELETE).
+   - Uppgifterna lagras i minnet.
+   
+2. **Frontend (GUI)**:
+   - Användare kan skapa, visa, uppdatera och radera uppgifter via ett grafiskt användargränssnitt.
+   - GUI:t använder Swing för att skapa en användarvänlig applikation.
 
-- **Objektorienterad design**:
-- Användbar abstrakta klasser och gränssnitt.
-- Uppgiftshantering sker via en TaskManager-implementering.
+### Funktioner
+- **Lägg till uppgifter**: Användare kan lägga till uppgifter med titel och beskrivning.
+- **Visa uppgifter**: Användare kan se alla sina uppgifter.
+- **Uppdatera uppgifter**: Användare kan uppdatera titeln och beskrivningen för en uppgift.
+- **Ta bort uppgifter**: Användare kan ta bort alla uppgifter.
+- **CRUD API**: Backend-API som gör det möjligt att skapa, läsa, uppdatera och ta bort uppgifter via HTTP.
 
-  ## Teknisk arkitektur
-  - **Frontend**: Swing GUI
-  - **Backend**: HTTP-server byggd med `HttpServer` från Java SE.
-  - **Databas**: Uppgifterna lagras i minnet med hjälp av en `ArrayList`.
- 
-    ## Installation och körning
-    ### Förkrav
-    - Java JDK 17 eller senare.
+---
+
+## Instruktioner för att starta servern och frontend-applikationen
+
+### 1. Klona projektet
+
+För att komma igång, börja med att klona repositoryn till din lokala maskin:
+  
+   ## Installation och körning
+   ### Förkrav
+  - Java JDK 17 eller senare.
    
       ## Starta applikationen:
       1. Klona projekt från GitHub
