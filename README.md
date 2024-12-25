@@ -1,74 +1,41 @@
+# **To-Do List Management System**
 
-# To-Do List Application
+## **Projektmål och Funktionalitet**
+Detta projekt är ett To-Do List Management System som gör det möjligt för användare att hantera sina uppgifter via både ett grafiskt användargränssnitt (GUI) och ett API. Projektet är uppdelat i två huvudkomponenter:
 
-## Projektbeskrivning
+### **Backend (Server)**
+- Hanterar uppgifter via ett RESTful API (GET, POST, PUT, DELETE).
+- Uppgifterna lagras i minnet för enkel hantering.
 
-Denna applikation är en enkel To-Do List-system som består av en backend (server) och en frontend (GUI). Backend hanterar API-anrop (GET, POST, PUT, DELETE) och lagrar uppgifter i minnet. Frontend-applikationen, byggd med Java Swing, tillåter användaren att interagera med systemet genom att visa, lägga till, redigera och ta bort uppgifter.
+### **Frontend (GUI)**
+- Gör det möjligt för användare att:
+  - Skapa nya uppgifter.
+  - Visa alla befintliga uppgifter.
+  - Uppdatera uppgifter.
+  - Radera uppgifter.
+- Byggt med **Swing** för en användarvänlig desktopapplikation.
 
-Projektet är uppdelat i två delar:
-1. **Backend (API)**: Hanterar CRUD-operationer för uppgifter (Create, Read, Update, Delete) med hjälp av en enkel HTTP-server.
-2. **Frontend (Swing)**: En GUI-applikation där användare kan lägga till, uppdatera, visa och ta bort uppgifter.
+---
 
-## Funktioner
+## **Funktioner**
+- **Lägg till uppgifter:** Skapa uppgifter med titel och beskrivning.
+- **Visa uppgifter:** Lista alla uppgifter som finns i systemet.
+- **Uppdatera uppgifter:** Ändra titeln och beskrivningen för en uppgift.
+- **Ta bort uppgifter:** Ta bort alla uppgifter i systemet.
+- **CRUD API:** Fullt funktionellt API för att skapa, läsa, uppdatera och radera uppgifter via HTTP-metoder.
 
-- **Backend:**
-  - GET /tasks – Hämta alla uppgifter.
-  - POST /tasks – Skapa en ny uppgift.
-  - PUT /tasks/{id} – Uppdatera en befintlig uppgift.
-  - DELETE /tasks/{id} – Ta bort en specifik uppgift.
+---
 
-- **Frontend:**
-  - Visa en lista med alla uppgifter.
-  - Lägga till en ny uppgift.
-  - Redigera en uppgift.
-  - Ta bort en uppgift.
+## **Systemkrav**
+- **Java JDK:** Version 17 eller senare.
+- En valfri IDE (t.ex. IntelliJ IDEA, Eclipse) eller kommandoradsverktyg för att köra projektet.
 
-## Installation och Körning
+---
 
-För att köra projektet, följ dessa steg:
+## **Installation och Körning**
+### **Steg 1: Klona projektet**
+För att komma igång, klona projektet från GitHub:
 
-### Backend (Server)
-1. Klona eller ladda ner projektet.
-2. Se till att Java är installerat på din dator. Du kan ladda ner det från [Java's officiella webbplats](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
-3. Öppna terminalen och navigera till mappen som innehåller backend-koden.
-4. Kompilera servern:
-    ```bash
-    javac SimpleHttpServer.java
-    ```
-5. Kör servern:
-    ```bash
-    java SimpleHttpServer
-    ```
-    Servern startar och lyssnar på `http://localhost:8000`.
-
-### Frontend (Swing)
-1. Öppna terminalen och navigera till mappen som innehåller frontend-koden.
-2. Kompilera frontend-koden:
-    ```bash
-    javac TodoListApp.java
-    ```
-3. Kör frontend-applikationen:
-    ```bash
-    java TodoListApp
-    ```
-    GUI-applikationen startar och du kan interagera med den genom att lägga till, uppdatera och ta bort uppgifter.
-
-## API-anrop Exempel
-
-Här är exempel på hur du kan använda API-anropen från frontend eller via ett HTTP-klientverktyg som Postman.
-
-### GET /tasks
-Hämta alla uppgifter:
 ```bash
-
-GET http://localhost:8000/tasks
-
- ## Installation och körning
-### Förkrav
-  - Java JDK 17 eller senare.
-   
- ## Starta applikationen:
- 1. Klona projekt från GitHub
-  ```bash
- git clone https://github.com/iara Alrawi/Avancerad-Java-Iara-Alrawi-slutprojekt
- cd Avancerad-Java-Iara-Alrawi-sluprojekt  
+git clone https://github.com/iaraAlrawi/Avancerad-Java-Iara-Alrawi-slutprojekt
+cd Avancerad-Java-Iara-Alrawi-slutprojekt
